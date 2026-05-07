@@ -1,0 +1,33 @@
+public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		int nromotor = 0, año = 0;
+		int opciones;
+		String modelo = "";
+		do {
+			System.out.println(
+					"bienvenido \npara ingresar un auto al consecionario ingrese 1\npara consultar los autos en el concesionario ingrese 2");
+			opciones = entrada.nextInt();
+			switch (opciones) {
+			case 1: {
+
+				System.out.println("ingrese el modelo del auto");
+				modelo = entrada.next();
+				System.out.println("ingrese el nromotor");
+				nromotor = entrada.nextInt();
+				System.out.println("ingrese el año del vehiculo");
+				año = entrada.nextInt();
+				//auto auto1 = new auto(modelo, nromotor, año);
+				//System.out.println("los valores ingresados fueron " + auto1.getmodelo() + " " + auto1.getnromotor()
+						//+ " " + auto1.getaño());
+			}
+			case 2: {
+				auto auto1 = new auto(modelo, nromotor, año);
+				System.out.println(auto1);
+
+			}
+			}
+		} while (opciones != 3);
+		{
+
+		}
+	}
