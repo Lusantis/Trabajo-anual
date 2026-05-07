@@ -1,0 +1,43 @@
+public class auto {
+
+	String modelo;
+	int nromotor;
+	int año;
+
+	public void setmodelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+	public String getmodelo() {
+		return modelo;
+	}
+
+	public void setnromotor(int nromotor) {
+		this.nromotor = nromotor;
+	}
+
+	public int getnromotor() {
+		return nromotor;
+	}
+
+	public void setaño(int año) {
+		this.año = año;
+	}
+
+	public int getaño() {
+		return año;
+	}
+
+	public auto(String modelo, int nromotor, int año) {
+		this.modelo=modelo;
+		this.nromotor=nromotor;
+		this.año=año;
+
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "modelo del coche :" + this.getmodelo() + " nro de motor :" + this.getnromotor()
+			+ " año del vehiculo :" + this.getaño();
+	}
+}
